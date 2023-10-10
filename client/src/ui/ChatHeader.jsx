@@ -8,7 +8,7 @@ import HelpIcon from "../assets/icons/help.svg";
 import Searchbar from "./Searchbar";
 const ChatHeader = () => {
   return (
-    <div className="py-2 px-4 border-b-2 border-discordDark-400 flex justify-between items-center">
+    <div className="py-2 px-4 border-b-2  border-discordDark-400 flex justify-between items-center">
       <div>
         <Friend imgSize={24} enableHoverEffect={false} />
       </div>
