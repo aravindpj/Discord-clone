@@ -7,7 +7,7 @@ const AppLayout = () => {
       <MainSidebar />
       <div className="ml-16 text-white">
         {/* pages */}
-        <Friends />
+        <Friends/>
       </div>
     </>
   );

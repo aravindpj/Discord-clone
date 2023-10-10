@@ -1,3 +1,4 @@
+import Chat from "../features/Friends/Chat";
 import FriendSidebar from "../features/Friends/FriendSidebar";
 
 const Friends = () => {
@@ -5,6 +6,7 @@ const Friends = () => {
     <div className="flex">
       <FriendSidebar />
       {/* <div className="text-black">Message</div> */}
+      <Chat/>
     </div>
   );
 };

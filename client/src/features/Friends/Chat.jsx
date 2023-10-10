@@ -1,12 +1,11 @@
-import React from 'react'
-import ChatHeader from '../../ui/ChatHeader'
+import ChatHeader from "../../ui/ChatHeader";
 
 const Chat = () => {
   return (
-    <div>
-       <ChatHeader/>
+    <div className="bg-discordDark-200 flex-1">
+      <ChatHeader />
     </div>
-  )
-}
+  );
+};
 
-export default Chat
+export default Chat;
