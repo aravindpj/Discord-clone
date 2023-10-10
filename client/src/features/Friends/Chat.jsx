@@ -2,11 +2,19 @@ import ChatHeader from "../../ui/ChatHeader";
 import MessageBox from "../../ui/MessageBox";
 import MessagesWindow from "../../ui/MessageWindow";
 import sergio from "../../assets/sergio.jpg";
+import { useEffect, useRef } from "react";
+
 const Chat = () => {
+  const Ref= useRef();
+  useEffect(() => {
+    Ref.current?.lastElementChild.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="flex relative flex-col bg-discordDark-200 h-screen flex-1">
       <ChatHeader />
-      <MessagesWindow>
+      <MessagesWindow topRef={Ref}>
         <div className="flex flex-col gap-3">
           <img
             src={sergio}
@@ -29,10 +37,31 @@ const Chat = () => {
           </div>
         </div>
 
-          {/* message */}
-          <div>
-              
-          </div>
+        {/* message */}
+        {Array(37)
+          .fill(0)
+          .map(() => {
+            return (
+              <>
+                <div className="flex gap-4">
+                  <div>
+                    <img
+                      src={sergio}
+                      alt=""
+                      className="rounded-full w-9 h-9 object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-medium text-base">
+                      sergio{" "}
+                      <time className="text-gray-400 text-xs">10/10/2023</time>
+                    </p>
+                    <p className="p-0 text-sm text-gray-200">Hey man goodmorning what is your plan today</p>
+                  </div>
+                </div>
+              </>
+            );
+          })}
       </MessagesWindow>
       <MessageBox />
     </div>
