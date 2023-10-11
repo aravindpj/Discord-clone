@@ -38,7 +38,7 @@ const Chat = () => {
         </div>
 
         {/* message */}
-        {Array(37)
+        {Array(14)
           .fill(0)
           .map(() => {
             return (

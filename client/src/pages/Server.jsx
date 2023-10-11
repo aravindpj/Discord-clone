@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ChannelSidebar from '../features/Channels/ChannelSidebar'
 import Chat from '../features/Channels/Chat'
 

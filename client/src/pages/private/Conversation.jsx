@@ -1,10 +1,7 @@
-
-import Chat from '../../features/Friends/Chat'
+import Chat from "../../features/Friends/Chat";
 
 const Conversation = () => {
-  return (
-    <Chat/>
-  )
-}
+  return <Chat />;
+};
 
-export default Conversation
+export default Conversation;

@@ -1,9 +1,5 @@
-import React from 'react'
-
 const ChannelSidebar = () => {
-  return (
-    <div>ChannelSidebar</div>
-  )
-}
+  return <div>ChannelSidebar</div>;
+};
 
-export default ChannelSidebar
+export default ChannelSidebar;

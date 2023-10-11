@@ -14,3 +14,7 @@
   background: #1e2124;
   border-radius: 20px;
 }
+.active{
+  border-radius: 1rem;
+  background-color: #7289da;
+}

@@ -1,10 +1,7 @@
-import React from 'react'
-import Chat from '../../features/Channels/Chat'
+import Chat from "../../features/Channels/Chat";
 
 const GroupConversation = () => {
-  return (
-    <Chat/>
-  )
-}
+  return <Chat />;
+};
 
-export default GroupConversation
+export default GroupConversation;
