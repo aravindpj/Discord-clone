@@ -1,4 +1,4 @@
-import Friends from "../pages/Friends";
+import { Outlet } from "react-router-dom";
 import MainSidebar from "./MainSidebar";
 
 const AppLayout = () => {
@@ -7,7 +7,7 @@ const AppLayout = () => {
       <MainSidebar />
       <div className="ml-16 text-white">
         {/* pages */}
-        <Friends/>
+        <Outlet/>
       </div>
     </>
   );

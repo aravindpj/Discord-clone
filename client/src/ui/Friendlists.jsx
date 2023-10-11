@@ -1,6 +1,7 @@
 import { HiPlus } from "react-icons/hi";
 
 import Friend from "./Friend";
+import { Link } from "react-router-dom";
 
 const Friendlists = ({ data, render }) => {
   return (
@@ -9,8 +10,9 @@ const Friendlists = ({ data, render }) => {
         <p className="uppercase">Direct Messages</p>
         <HiPlus className="text-base cursor-pointer" />
       </div>
-
-      <Friend imgSize={30} />
+      <Link to={`@me/${1}`}>
+        <Friend imgSize={30} />
+      </Link>
     </div>
   );
 };

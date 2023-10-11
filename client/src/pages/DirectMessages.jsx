@@ -1,14 +1,14 @@
-import Chat from "../features/Friends/Chat";
+import { Outlet } from "react-router-dom";
 import FriendSidebar from "../features/Friends/FriendSidebar";
 
-const Friends = () => {
+const DirectMessages = () => {
   return (
     <div className="flex">
       <FriendSidebar />
       {/* <div className="text-black">Message</div> */}
-      <Chat/>
+      <Outlet />
     </div>
   );
 };
 
-export default Friends;
+export default DirectMessages;

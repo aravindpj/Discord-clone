@@ -1,10 +1,16 @@
-const SidebarButtons = ({ src, text }) => {
+import { Link } from "react-router-dom";
+
+// eslint-disable-next-line react/prop-types
+const SidebarButtons = ({ src, text, to }) => {
   return (
     <div>
-      <button className="flex gap-3 w-full py-[9px] pl-3 rounded-sm items-center hover:bg-discordDark-200">
+      <Link
+        to={to}
+        className="flex gap-3 w-full py-[9px] pl-3 rounded-sm items-center hover:bg-discordDark-200"
+      >
         <img src={src} alt="" />
         <span>{text}</span>
-      </button>
+      </Link>
     </div>
   );
 };
