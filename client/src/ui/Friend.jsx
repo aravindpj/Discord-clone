@@ -5,8 +5,8 @@ import offline from "../assets/offline-icon.png";
 // eslint-disable-next-line react/prop-types
 const Friend = ({imgSize , enableHoverEffect=true }) => {
   const buttonClassName = enableHoverEffect
-  ? "flex gap-2 items-center py-1 pl-2 rounded-sm hover:bg-discordDark-200"
-  : "flex gap-2 items-center py-1 pl-2 rounded-sm";
+  ? "flex w-full gap-2 items-center py-1 pl-2 rounded-sm hover:bg-discordDark-200"
+  : "flex w-full gap-2 items-center py-1 pl-2 rounded-sm";
   const imgStyle = {
     width: `${imgSize}px`,
     height: `${imgSize}px`,
