@@ -5,7 +5,6 @@ import { FaCompass } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
-  
   return (
     <div className=" bg-discordDark-400 flex flex-col items-center w-16 px-2 py-2 fixed top-0 bottom-0">
       <NavLink to="channel/@me"  className="bg-discordDark-200 transform cursor-pointer transition-transform hover:scale-110 rounded-full hover:rounded-2xl hover:bg-discordBlue w-12">
